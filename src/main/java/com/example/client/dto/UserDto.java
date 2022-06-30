@@ -1,10 +1,10 @@
 package com.example.client.dto;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 
-
+@JsonNaming(value= PropertyNamingStrategies.SnakeCaseStrategy.class) // 여기입니다.
 public class UserDto {
     private String id;
     private String email;
